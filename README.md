@@ -10,8 +10,6 @@ Next, run the following commands :
 
 	```
 	sudo apt install powerline-shell
-	```
-	```
 	sudo apt install fonts-powerline
 	```
 
@@ -19,6 +17,7 @@ Set a powerline font in the terminal settings.
 Make sure that your locale is set to en_US.UTF-8, otherwise the glyphs will not be visible.
 If it still doesn't work, check .bashrc and make sure that the defined installation directories are correct.
 [The GitHub Repository for Powerline](https://github.com/powerline/powerline)
+
 [The GitHub Repository for Powerline-fonts](https://github.com/powerline/fonts)
 
 
@@ -27,8 +26,6 @@ Run the following commands :
 
 	```
 	sudo apt-get install dconf-cli uuid-runtime
-	```
-	```
 	bash -c "$(wget -qO- https://git.io/vQgMr)"
 	```
 
