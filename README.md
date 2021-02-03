@@ -9,7 +9,8 @@ Make sure that you have the latest versions of Python and Pip installed.
 Next, run the following commands :
 
 
-```sudo apt install powerline-shell
+```
+sudo apt install powerline-shell
 sudo apt install fonts-powerline
 ```
 
@@ -24,7 +25,8 @@ If it still doesn't work, check .bashrc and make sure that the defined installat
 #### Setting up the gruvbox colorscheme
 Run the following commands :
 
-```sudo apt-get install dconf-cli uuid-runtime
+```
+sudo apt-get install dconf-cli uuid-runtime
 bash -c "$(wget -qO- https://git.io/vQgMr)"
 ```
 
