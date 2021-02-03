@@ -8,10 +8,10 @@ A repo to store all my dotfiles (config files).
 Make sure that you have the latest versions of Python and Pip installed.
 Next, run the following commands :
 
-	```
-	sudo apt install powerline-shell
-	sudo apt install fonts-powerline
-	```
+
+```sudo apt install powerline-shell
+sudo apt install fonts-powerline
+```
 
 Set a powerline font in the terminal settings.
 Make sure that your locale is set to en_US.UTF-8, otherwise the glyphs will not be visible.
@@ -24,10 +24,9 @@ If it still doesn't work, check .bashrc and make sure that the defined installat
 #### Setting up the gruvbox colorscheme
 Run the following commands :
 
-	```
-	sudo apt-get install dconf-cli uuid-runtime
-	bash -c "$(wget -qO- https://git.io/vQgMr)"
-	```
+```sudo apt-get install dconf-cli uuid-runtime
+bash -c "$(wget -qO- https://git.io/vQgMr)"
+```
 
 And in the interactive mode, select 'Gruvbox-dark' or whatever colorscheme that you prefer.
 [The GitHub Repository for Gogh](https://github.com/Mayccoll/Gogh)
