@@ -32,6 +32,7 @@ bash -c "$(wget -qO- https://git.io/vQgMr)"
 ```
 
 And in the interactive mode, select 'Gruvbox-dark' or whatever colorscheme that you prefer.
+
 [The GitHub Repository for Gogh](https://github.com/Mayccoll/Gogh)
 
 ## Vim Setup
