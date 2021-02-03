@@ -19,6 +19,7 @@ Make sure that your locale is set to en_US.UTF-8, otherwise the glyphs will not 
 If it still doesn't work, check .bashrc and make sure that the defined installation directories are correct.
 
 [The GitHub Repository for Powerline](https://github.com/powerline/powerline)
+
 [The GitHub Repository for Powerline-fonts](https://github.com/powerline/fonts)
 
 
