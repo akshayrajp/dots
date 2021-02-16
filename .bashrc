@@ -127,3 +127,8 @@ if [ -f $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerli
     POWERLINE_BASH_SELECT=1
     source $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
 fi
+
+# Copy-paste for files
+# Now `cclip' copies and `pclip' pastes'
+alias cclip='xclip -selection clipboard'
+alias pclip='xclip -selection clipboard -o'
