@@ -1,0 +1,83 @@
+sarn,0930938203,Programming,akj.rajpurohit@gmail.com
+saravanan,0930938403,Web Development,jvs.ravanan@gmail.com
+Aravind,8519858090,Web Development,kasiaravindreddy999@gmail.com
+Madhav,7842608772,Programming,kmadhav728@gmail.com
+Shivani,8179882186,Programming,shivalenkashivani@gmail.com
+Anisha,9490103845,Web Development,itsaanishasingh@gmail.com
+Revanth,9704145656,Web Development,revantark@gmail.com
+Prashanith,9550710377,Web Development,prashanith007@gmail.com
+Kalyan,8985856090,Cyber Security,balgurikalyan711@gmail.com
+Jaswanth,8374910567,Programming,jaswanthbandhu4670@gmail.com
+Nutan,7032549189,Programming,bomideninutanteja@gmail.com
+GUGGILLA CHANDU,6301780762,Web Development,chanduguggilla246@gmail.com
+M Yasaswi Raj,7416136474,Programming,yasaswirajmadari@gmail.com
+Siddharth Malladi,7989915889,Machine Learning,siddumalladi1234@gmail.com
+Aaris,8179602969,Web Development,aaris03khan@gmail.com
+Poojitha,9902455266,Programming,poojithaa0611@gmail.com
+Sai Kiran,8790805406,Programming,bsaikiran618@gmail.com
+sai kumar ,9652275301,Programming,saikumarvenishetti@gmail.com
+Vishnu,8639990224,Programming,vvreddy1584@gmail.com
+anil nibba,9999999999,Machine Learning,vbit@gmail.com
+Kaushik Apoori,9177468574,Machine Learning,apoorikaushik@gmail.com
+Maneesh,9063320052,Machine Learning,maneeshbanka@gmail.com
+Bhoomika,6305603907,Programming,bhoomikachakilam323@gmail.com
+L.Abhishek yadav,9908450127,Programming,labhishekyadav14@gmail.com
+Am Veena,9515419783,Programming,veenashekar909@gmail.com
+Rushika,6301559212,Cyber Security,rushikarickey@gmail.com
+Uday Kumar,6300687937,Cyber Security,uk8096386837@gmail.com
+Sbssv,9390159644,Cyber Security,sgshsns@gmail.com
+Sammidi Sai Deepak Reddy,8309106016,Programming,sammidisaideepakreddy104@gmail.com
+Sonika,7013194776,Programming,sonikasuggala18@gmail.com
+Vasanth,9849558121,Programming,varavasanth21@gmail.com
+Ashish Joshi,9603040281,Programming,ashish.joshiaj212002@gmail.com
+Naveen,6353881097,Web Development,19p61a0547@vbithyd.ac.in
+Shiva,8555848991,Cyber Security,shivasaireddy133@gmail.com
+Harihar ,8897127276,Programming,harihar.durki27@gmail.com
+Shanthan,8008667667,Web Development,shanthanreddykatukuri@gmail.com
+MARAMENI SANGEETHA,8523003889,Web Development,sangeetham977@gmail.com
+Jabeen Maleka ,6304382486,Programming,mdjabeenmaleka5786@gmail.com
+Vishnuteja,6304798328,Programming,vishnuteja476@gmail.com
+Nikunj,9082599759,Machine Learning,nikunjwadgeri60@gmail.com
+Harshith,6305123836,Cyber Security,padmaharshu99@gmail.com
+Guru sai mohan Chandra ,8919083054,Programming,sandy.mohan102@gmail.com
+Shreya,8688892836,Programming,shreyapanjala19@gmail.com
+P. Sivateja,9182934570,Programming,smilysivateja01@gmail.com
+sanjay,9553088803,Machine Learning,sanjaypodishetty9@gmail.com
+Srija ,6300318769,Programming,pothamshettisrija@gmail.com
+Pranchal,7893041393,Programming,agarwal.pranchal1501@gmail.com
+abhishek ,9949799462,Programming,abhipurumandla@gmail.con
+Sai vardhan reddy,7569589011,Machine Learning,d.saivardhanr@gmail.com
+Mitul ,9676994430,Programming,mitulraj.s@gmail.com
+Gowtham,8008183762,Web Development,reddygowtham8008@gmail.com
+Vaishnavi U,9390391886,Programming,vaishnaviu1405@gmail.com
+Sanjana,7207651234,Programming,shalu.sanjana1@gmail.com
+Varsha Reddy,9515745383,Programming,varshareddy2425@gmail.com
+Aadarsh,8498803888,Programming,adarshmahendra2@gmail.com
+Mahita,9618557993,Programming,mahitadivyavellanki2521@gmail.com
+Harsha,7396090794,Web Development,sriharshavemuri7@gmail.com
+Yadulla Sindhu,7995218794,Programming,sindhureddyyadulla21@gmail.com
+Rohit ,9177117624,Programming,mdrohitreddy@gmail.com
+Srija,8919429209,Programming,srijanakirakommula@gmail.com
+Venki,8309209944,Programming,kittuvenki264@gmail.com
+Deekshitha,6300142878,Web Development,pallaladeekshitha@gmail.com
+Nithin ,9059593185,Programming,pashamnithinreddy@gmail.com
+Maheshwari,8309702243,Web Development,maheshwaris830@gmail.com
+Sravani,9390588551,Web Development,sannidhikovela47@gmail.com
+Raghavender,8074279086,Programming,raghubabu886@gmail.com
+Abhinaya,9390687360,Programming,surabhiabhinaya148@gmail.com
+Gaurav,9505811343,Cyber Security,tgauravsinghbks@gmail.com
+Mahitha,9676888224,Programming,mahitha0555@gmail.com
+Bhavana gadapa ,7675890519,Machine Learning,bhavanagadapa555@gmail.com
+nan,9192394052,Web Development,nan@nanan.com
+Vihana,6305594798,Cyber Security,shaikvihana@gmail.com
+Sai,9000539692,Programming,karnisairaj6@gmail.com
+Chandra kiran,8106489367,Programming,chandra.dkiran@outlook.com
+Ambica,7386261423,Cyber Security,ambicapadam18@gmail.com
+Ashish,8978821582,Machine Learning,ashishgajjala@rediffmail.com
+SRAVAN KUMAR REDDY,7382121885,Programming,ksravanreddy1008@gmail.com
+Tester,7207670166,Programming,abc@xyz.com
+Vinay,7036783985,Programming,vinaymiryala123456@gmail.com
+P v b,9502232890,Web Development,20P65A0432@vbithyd.ac.in
+Sankeerth Reddy,9912913209,Programming,sankeerthreddy635@gmail.com
+Shiva,9063482433,Web Development,sandupatlashiva2@gmail.com
+Nithin,9912398544,Web Development,pothu.nithin1@gmail.com
