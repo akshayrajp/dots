@@ -132,3 +132,9 @@ fi
 # Now `cclip' copies and `pclip' pastes'
 alias cclip='xclip -selection clipboard'
 alias pclip='xclip -selection clipboard -o'
+
+# Quick shutdown
+alias sd='shutdown -h now'
+
+# Trim directory path
+PROMPT_DIRTRIM=1
