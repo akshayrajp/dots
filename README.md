@@ -52,9 +52,9 @@ If the Powerline status bar is not visible, or is improper, make sure that the d
 ## OpenDNS Setup
 If on a home network, it is best to do this on the WiFi router. Go to the DHCP settings and give these two DNS addresses
 
-	```
-	Primary - 208.67.222.123
-	Secondary - 208.67.220.123
-	```
+```
+Primary - 208.67.222.123
+Secondary - 208.67.220.123
+```
 
 If not on a home network, just Google how to change DNS addresses for the intended OS.
