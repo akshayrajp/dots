@@ -54,8 +54,6 @@ If on a home network, it is best to do this on the WiFi router. Go to the DHCP s
 
 	```
 	Primary - 208.67.222.123
-	```
-	```
 	Secondary - 208.67.220.123
 	```
 
