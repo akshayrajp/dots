@@ -48,3 +48,15 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 Next, open vim and run `PlugInstall`, and that will download and install all the plugins that is defined in the .vimrc that comes with this repository.
 
 If the Powerline status bar is not visible, or is improper, make sure that the defined installation directories are correct.
+
+## OpenDNS Setup
+If on a home network, it is best to do this on the WiFi router. Go to the DHCP settings and give these two DNS addresses
+
+	```
+	Primary - 208.67.222.123
+	```
+	```
+	Secondary - 208.67.220.123
+	```
+
+If not on a home network, just Google how to change DNS addresses for the intended OS.
