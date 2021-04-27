@@ -138,3 +138,11 @@ alias sd='shutdown -h now'
 
 # Trim directory path
 PROMPT_DIRTRIM=1
+source "$HOME/.cargo/env"
+
+# Add title to terminal
+# USAGE : ttitle <some title here>
+ttitle()
+{
+	printf "\033]0;$*\007";
+}
