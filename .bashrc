@@ -87,6 +87,8 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
+alias python='python3'
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -116,33 +118,213 @@ if ! shopt -oq posix; then
   fi
 fi
 
-### Custom script starts here
-# Add this to your PATH if it’s not already declared
-export PATH=$PATH:$HOME/.local/bin
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Powerline configuration
-if [ -f $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh ]; then
-    $HOME/.local/bin/powerline-daemon -q
-    POWERLINE_BASH_CONTINUATION=1
-    POWERLINE_BASH_SELECT=1
-    source $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
-fi
+
+# custom stuff
+
+# use starship
+eval "$(starship init bash)"
 
 # Copy-paste for files
 # Now `cclip' copies and `pclip' pastes'
 alias cclip='xclip -selection clipboard'
 alias pclip='xclip -selection clipboard -o'
 
-# Quick shutdown
+# Add title to the gnome terminal
+# USAGE : ttitle <some title here>
+function title() {
+  if [[ -z "$ORIG" ]]; then
+    ORIG=$PS1
+  fi
+  TITLE="\[\e]2;$*\a\]"
+  PS1=${ORIG}${TITLE}
+}
+
+# update and upgrade
+alias u='sudo apt update && sudo apt upgrade -y'
+
+# check if you're still connected to the internet
+alias p='ping -c4 8.8.4.4'
+
+# clear console
+alias c='clear'
+
+# exit
+alias e='exit'
+
+# install a package
+alias i='sudo apt install -y '
+
+# uninstall a package
+alias ui='sudo apt remove --purge -y '
+
+# autoremove and autoclean
+alias arc='sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y'
+
+# search installed packages
+alias sp='dpkg --list | grep '
+
+# login as root to mysql
+alias sql='mysql -u root -p'
+
+# login as postgres to postgresql
+alias posql='sudo -u postgres psql'
+
+# launch ranger
+alias r='ranger'
+
+# git aliases
+alias g='git '
+alias gi='git init'
+alias ga='git add '
+alias gc='git commit -m '
+alias gck='git checkout '
+alias gckb='git checkout -b'
+alias gpl='git pull'
+alias gplo='git pull origin '
+alias gcp='git cherry-pick '
+alias gps='git push '
+alias gpso='git push --set-upstream origin '
+alias gst='git status'
+
+# npm aliases
+alias ns='npm start '
+alias ni='npm i '
+alias nig='npm i -g '
+alias nu='npm uninstall '
+alias nug='npm uninstall -g '
+
+# build and serve
+alias bs='npm run build && serve -d build/ -p 3300'
+
+# quick shutdown
 alias sd='shutdown -h now'
 
-# Trim directory path
-PROMPT_DIRTRIM=1
-source "$HOME/.cargo/env"
+# install deb files
+alias ideb='sudo dpkg -i'
 
-# Add title to terminal
-# USAGE : ttitle <some title here>
-ttitle()
+# vim = nvim
+alias vim='nvim'
+
+### ARCHIVE EXTRACTION
+# usage: ex <file>
+ex ()
 {
-	printf "\033]0;$*\007";
+  if [ -f "$1" ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1   ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *.deb)       ar x $1      ;;
+      *.tar.xz)    tar xf $1    ;;
+      *.tar.zst)   unzstd $1    ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
 }
+
+# serve folder on a simple http server on a specified port
+alias serve='python -m http.server'
+
+# docker stuff
+alias dc='docker-compose'
+alias mkb="minikube kubectl --"
+alias dr='docker rmi $(docker images -a -q)'
+
+# make and cd into directory
+function mcd() {
+  mkdir -p "$1" && cd "$1";
+}
+
+# go back x directories
+b() {
+    str=""
+    count=0
+    while [ "$count" -lt "$1" ];
+    do
+        str=$str"../"
+        let count=count+1
+    done
+    cd $str
+}
+
+# calculator with math
+alias calc='bc -l'
+
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+
+# yarn stuff
+alias ysd='yarn start:dev'
+alias ys='yarn start'
+
+
+# Keep the following function and code at the end of .bashrc
+# Used to automatically switch to appropriate node version by checking for a .nvmrc file in the directory
+cdnvm() {
+    command cd "$@" || return $?
+    nvm_path=$(nvm_find_up .nvmrc | tr -d '\n')
+
+    # If there are no .nvmrc file, use the default nvm version
+    if [[ ! $nvm_path = *[^[:space:]]* ]]; then
+
+        declare default_version;
+        default_version=$(nvm version default);
+
+        # If there is no default version, set it to `node`
+        # This will use the latest version on your machine
+        if [[ $default_version == "N/A" ]]; then
+            nvm alias default node;
+            default_version=$(nvm version default);
+        fi
+
+        # If the current version is not the default version, set it to use the default version
+        if [[ $(nvm current) != "$default_version" ]]; then
+            nvm use default;
+        fi
+
+    elif [[ -s $nvm_path/.nvmrc && -r $nvm_path/.nvmrc ]]; then
+        declare nvm_version
+        nvm_version=$(<"$nvm_path"/.nvmrc)
+
+        declare locally_resolved_nvm_version
+        # `nvm ls` will check all locally-available versions
+        # If there are multiple matching versions, take the latest one
+        # Remove the `->` and `*` characters and spaces
+        # `locally_resolved_nvm_version` will be `N/A` if no local versions are found
+        locally_resolved_nvm_version=$(nvm ls --no-colors "$nvm_version" | tail -1 | tr -d '\->*' | tr -d '[:space:]')
+
+        # If it is not already installed, install it
+        # `nvm install` will implicitly use the newly-installed version
+        if [[ "$locally_resolved_nvm_version" == "N/A" ]]; then
+            nvm install "$nvm_version";
+        elif [[ $(nvm current) != "$locally_resolved_nvm_version" ]]; then
+            nvm use "$nvm_version";
+        fi
+    fi
+}
+
+alias cd='cdnvm'
+cd "$PWD"
+
+# bit
+export PATH="$PATH:/home/axai/bin"
+# bit end
+
+# Created by `pipx` on 2023-07-07 09:49:37
+export PATH="$PATH:/home/axai/.local/bin"
