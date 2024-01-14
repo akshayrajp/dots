@@ -321,10 +321,3 @@ cdnvm() {
 
 alias cd='cdnvm'
 cd "$PWD"
-
-# bit
-export PATH="$PATH:/home/axai/bin"
-# bit end
-
-# Created by `pipx` on 2023-07-07 09:49:37
-export PATH="$PATH:/home/axai/.local/bin"
